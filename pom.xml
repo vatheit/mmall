@@ -67,6 +67,7 @@
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <configuration>
+                    <serverId>docker-hub</serverId>
                     <imageName>${docker.image.url}/${project.artifactId}</imageName>
                     <!--<dockerDirectory>src/main/docker</dockerDirectory>-->
                     <baseImage>java:8</baseImage>
